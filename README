@@ -1,0 +1,15 @@
+
+
+Start the Application with podman
+> podman run -it --rm --name today -p 8080:80 -v "$PWD":/usr/src/app -w /usr/src/app node node app.js
+
+
+created jam-cos-4d
+public cos info
+
+endpoint=s3.us-east.cloud-object-storage.appdomain.cloud
+us-east/
+bucket=pdfs-knfa2
+object=wallstreetjournal_20220715_TheWallStreetJournal.pdf
+
+https://pdfs-knfa2.s3.us-east.cloud-object-storage.appdomain.cloud/wallstreetjournal_20220715_TheWallStreetJournal.pdf
