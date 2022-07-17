@@ -13,3 +13,24 @@ bucket=pdfs-knfa2
 object=wallstreetjournal_20220715_TheWallStreetJournal.pdf
 
 https://pdfs-knfa2.s3.us-east.cloud-object-storage.appdomain.cloud/wallstreetjournal_20220715_TheWallStreetJournal.pdf
+
+local run
+# Install the prereqs
+npm init -y
+npm install express ejs --save
+
+npm start app.js
+
+
+MVP 0.1
+Adding github connections to local, generating new ssh keys.  
+Create new public repository 
+
+Following Source-to-Image Doc: https://developer.ibm.com/tutorials/deploy-applications-from-dockerfile-using-openshift-s2i/
+
+Adding locally sourced code to github: https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-locally-hosted-code-to-github
+
+ 
+
+MVP 0
+
