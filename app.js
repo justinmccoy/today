@@ -5,7 +5,9 @@ const fs = require("fs");
 
 const app = express();
 const dirPath = path.join(__dirname, "public/pdfs");
-const port = 80;
+
+var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
+    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 /*const files = fs.readdirSync(dirPath).map(name => {
 	return {
@@ -28,4 +30,4 @@ app.get("/",(req, res) => {
 });
 
 
-app.listen(port, () => console.log(`app listening on port ${port}`));
+app.listen(port, ip, () => console.log(`app listening on port ${port}`));
